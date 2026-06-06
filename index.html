@@ -10,31 +10,71 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#phases">Phases</a></li>
-                <li><a href="#leaderboard">Leaderboard</a></li>
-                <li><a href="#settings">Settings</a></li>
+                <li><a href="#phases" class="nav-link">Phases</a></li>
+                <li><a href="#leaderboard" class="nav-link">Leaderboard</a></li>
+                <li><a href="#settings" class="nav-link">Settings</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="phases">
-            <h1>Phases</h1>
+        <section id="phases" class="section-bg">
+            <h1 class="section-title">Phases</h1>
             <ul>
-                <li>
-                    <h2>Phase 1: Introduction</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <button>Start Phase</button>
+                <li class="phase-card">
+                    <h2 class="phase-title">Phase 1: Introduction</h2>
+                    <p class="phase-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <button class="start-button">Start Phase</button>
                 </li>
-                <li>
-                    <h2>Phase 2: HTML</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <button>Start Phase</button>
+                <li class="phase-card">
+                    <h2 class="phase-title">Phase 2: HTML</h2>
+                    <p class="phase-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <button class="start-button">Start Phase</button>
                 </li>
                 <!-- Add more phases here -->
             </ul>
         </section>
-        <section id="leaderboard">
-            <h1>Leaderboard</h1>
+        <section id="leaderboard" class="section-bg">
+            <h1 class="section-title">Leaderboard</h1>
+            <table class="leaderboard-table">
+                <thead>
+                    <tr>
+                        <th class="leaderboard-header">Rank</th>
+                        <th class="leaderboard-header">User</th>
+                        <th class="leaderboard-header">Progress</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="leaderboard-row">
+                        <td class="leaderboard-data">1</td>
+                        <td class="leaderboard-data">John Doe</td>
+                        <td class="leaderboard-data">90%</td>
+                    </tr>
+                    <tr class="leaderboard-row">
+                        <td class="leaderboard-data">2</td>
+                        <td class="leaderboard-data">Jane Doe</td>
+                        <td class="leaderboard-data">80%</td>
+                    </tr>
+                    <!-- Add more leaderboard entries here -->
+                </tbody>
+            </table>
+        </section>
+        <section id="settings" class="section-bg">
+            <h1 class="section-title">Settings</h1>
+            <form>
+                <label for="username" class="form-label">Username:</label>
+                <input type="text" id="username" name="username" class="form-input"><br><br>
+                <label for="password" class="form-label">Password:</label>
+                <input type="password" id="password" name="password" class="form-input"><br><br>
+                <button class="save-button">Save Changes</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p class="footer-text">&copy; 2023 Levelone Replica</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>            <h1>Leaderboard</h1>
             <table>
                 <thead>
                     <tr>
