@@ -3,10 +3,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f0f0f0;
 }
 
 header {
-    background-color: #333;
+    background-color: #3498db;
     color: #fff;
     padding: 1em;
     text-align: center;
@@ -29,12 +30,114 @@ nav a {
     text-decoration: none;
 }
 
-main {
+.nav-link {
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #ccc;
+}
+
+.main {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2em;
 }
+
+.section-bg {
+    background-color: #fff;
+    padding: 1em;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    color: #3498db;
+    margin-top: 0;
+}
+
+.phase-card {
+    background-color: #f7f7f7;
+    padding: 1em;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.phase-title {
+    color: #666;
+    margin-top: 0;
+}
+
+.phase-description {
+    color: #999;
+}
+
+.start-button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.start-button:hover {
+    background-color: #3e8e41;
+}
+
+.leaderboard-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.leaderboard-header {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.leaderboard-row {
+    border: 1px solid #ddd;
+}
+
+.leaderboard-data {
+    padding: 10px;
+    text-align: left;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.save-button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.save-button:hover {
+    background-color: #3e8e41;
+}
+
+.footer-text {
+    color: #666;
+    text-align: center;
+    padding: 1em;
+}}
 
 section {
     background-color: #f7f7f7;
